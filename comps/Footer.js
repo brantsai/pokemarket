@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div>
+    <footer>
       <span>Copyright 2022 PokeMarket</span>
-    </div>
+    </footer>
   );
 }
  

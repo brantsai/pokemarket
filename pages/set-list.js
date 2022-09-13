@@ -13,11 +13,10 @@ export async function getServerSideProps() {
 }
 
 const SetList = ({ setList }) => {
-  console.log(setList)
 
   return ( 
     <div>
-      <h1>Set List</h1>
+      <h2>Set List</h2>
       <div>
         {setList.data.map((setInfo) => 
           <Set
