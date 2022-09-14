@@ -5,11 +5,15 @@ const NavBar = () => {
   return (
     <nav>
       <div className="logo">
-        <Image 
-          src="/pokeball.png" 
-          width={77}
-          height={77}
-        />
+        <Link href="/">
+          <div>
+            <Image 
+              src="/pokeball.png" 
+              width={77}
+              height={77}
+            />
+          </div>
+        </Link>
       </div>
       <Link href="/"><a>Home</a></Link>
       <Link href="/set-list"><a>Set List</a></Link>
