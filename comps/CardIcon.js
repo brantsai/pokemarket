@@ -1,7 +1,7 @@
 import styles from '../styles/set.module.css';
 import Image from 'next/image';
 
-const Card = ({ cardInfo }) => {
+const CardIcon = ({ cardInfo }) => {
   return ( 
     <div className={styles.setContainer}>
       <div className={styles.setImage}>
@@ -17,4 +17,4 @@ const Card = ({ cardInfo }) => {
   );
 }
  
-export default Card;
+export default CardIcon;
