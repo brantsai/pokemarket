@@ -1,7 +1,13 @@
+import { useContext } from "react";
+import AppContext from "../../comps/AppContext";
+import CardOverview from "../../comps/CardOverview";
+
 const Card = () => {
+  const context = useContext(AppContext)
+
   return (
     <div>
-      hi
+      <CardOverview cardInfo={context.currentCard}/>
     </div>
   )
 }

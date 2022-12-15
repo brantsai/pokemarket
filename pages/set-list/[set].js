@@ -16,6 +16,12 @@ export async function getServerSideProps(context) {
 }
 
 const CardList = ({ cardList }) => {
+  const context = useContext(AppContext)
+
+  const handleCardClick = (cardInfo) => {
+    context.setCurrentCard(cardInfo)
+  }
+
   return (  
     <div>
       <h2 className={styles.header}>{cardList.data[0].set.name} Card List</h2>
@@ -28,7 +34,7 @@ const CardList = ({ cardList }) => {
             }}
             key={cardInfo.id}
           >
-            <div>
+            <div onClick={() => handleCardClick(cardInfo)}>
               <CardIcon 
                 cardInfo={cardInfo}
               />
