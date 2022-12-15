@@ -9,7 +9,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <AppContext.Provider value={{currentCard, setCurrentCard}}>
       <Layout>
-        <Component {...pageProps} />
+        <div className="content">
+          <Component {...pageProps} />
+        </div>
       </Layout>
     </AppContext.Provider>
   )
