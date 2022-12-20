@@ -6,14 +6,12 @@ const CardOverview = ({ cardInfo }) => {
   const router = useRouter();
 
   return (
-    <div>
-      <h1>#{cardInfo.number} {cardInfo.name}</h1>
-      <div>{cardInfo.rarity}</div>
+    <div className={styles.columnContainer}>
       <div className={styles.cardImage}>
         <Image
           src={cardInfo.images.large}
-          width={280}
-          height={390}
+          width={250}
+          height={348}
         >
         </Image>
       </div>
